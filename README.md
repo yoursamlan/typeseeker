@@ -1,5 +1,5 @@
 # typeseeker... | version 1.0
-A speed typing game built with Javascript (ES6) that runs in a browser. 
+A speed typing game built with Javascript that runs in a browser. 
 
 ## Getting Started
 
