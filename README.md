@@ -3,13 +3,13 @@ A speed typing game built with Javascript that runs in a browser.
 
 ## Getting Started
 
-Run the index.html file to open the webpage and start playing the game..
+Run the index.html file to start playing the game.
 
-or try it here - [typeseeker... | Original](https://alexnjoroge.github.io/typeseeker-original/) 
+try it here - [typeseeker... | Original](https://alexnjoroge.github.io/typeseeker-original/) 
 
 ## Difficulty Levels
 
-The game has three difficulty levels that can be toggled between in the main.js file in the js folder.
+The game has three difficulty levels that can be toggled between in the main.js file in the js folder:
 
 1. Easy   - 5 seconds to type a word.
 2. Medium - 3 seconds to type a word.
