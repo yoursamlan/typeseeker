@@ -1,11 +1,11 @@
-# typeseeker... | Original Version
+# typeseeker... 
 A speed typing game built with JavaScript that runs in a browser. 
 
 ## Getting Started
 
 Run the index.html file to start playing the game.
 
-Try it out here - [typeseeker... | Original Version](https://alexnjoroge.github.io/typeseeker-original/) 
+Try it out here - [typeseeker...](https://alexnjoroge.github.io/typeseeker/) 
 
 ## Difficulty Levels
 
