@@ -21,7 +21,7 @@ The game has three difficulty levels that can be toggled between in the main.js 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 
-## Contacts
+## Get In Touch
 
  [Twitter](https://twitter.com/thealexnjoroge) 
  
