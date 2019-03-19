@@ -16,11 +16,6 @@ The game has three difficulty levels that can be toggled between in the main.js 
 3. Hard   - 1 second to type a word.
 
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
-
-
 ## Get In Touch
 
  [Twitter](https://twitter.com/thealexnjoroge) 
