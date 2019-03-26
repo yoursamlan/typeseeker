@@ -16,9 +16,3 @@ The game has three difficulty levels that can be toggled between in the main.js 
 3. Hard   - 1 second to type a word.
 
 
-## Get In Touch
-
- [Twitter](https://twitter.com/thealexnjoroge) 
- 
- [LinkedIn](https://linkedin.com/in/alexnjoroge) 
-
