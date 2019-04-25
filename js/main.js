@@ -32,7 +32,7 @@ const levels = {
 // To change level
 const currentLevel = levels.medium;
 
-// Global Variables
+// Global Vars
 let time = currentLevel;
 let score = 0;
 let isPlaying;
