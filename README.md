@@ -1,5 +1,5 @@
 # typeseeker... 
-A speed-typing game built with JavaScript that runs in a browser and has various difficulty levels that the user can choose between.
+A speed-typing game that runs in a browser and has various difficulty levels that a user can choose between.
 
 ## Getting Started
 
