@@ -3,7 +3,7 @@ window.addEventListener('load', init);
 // Initialize Game
 function init() {
   // Setup loading text
-  wordInput.value = 'Loading...';
+  wordInput.placeholder = 'Loading...';
   wordInput.disabled = true;
   // Load text
   loadWords();
@@ -53,7 +53,10 @@ function loadWords() {
       lines.pop(0);
       lines.pop(0);
       words = lines;
+      score = -1;
       wordInput.disabled = false;
+      wordInput.placeholder = 'Start typing...';
+      timeDisplay.innerHTML = currentLevel;
       showWord(words);
     });
 }
@@ -101,6 +104,10 @@ function showWord(words) {
 
 // Countdown timer
 function countdown() {
+  if(!isPlaying) {
+    return;
+  }
+
   // Make sure time is not run out
   if (time > 0) {
     // Decrement
