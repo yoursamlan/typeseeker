@@ -4,7 +4,6 @@ A speed-typing game that runs in a browser and has various difficulty levels tha
 ## Getting Started
 Set up a local server and serve the files to start playing the game.<br> 
 A server is needed because the wordlist is being loaded from another file.<br>
-It won't work by just opening the html file, but it should when served from even the simplest http server.<br> 
 A fast choice is the [Chrome Web Server extension](https://github.com/kzahel/web-server-chrome)<br>
 
 Try out the game here - [typeseeker...](https://alexnjoroge.github.io/typeseeker/) 
