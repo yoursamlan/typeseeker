@@ -2,10 +2,13 @@ window.addEventListener('load', init);
 
 // Initialize Game
 function init() {
+  // Setup loading text
+  wordInput.placeholder = 'Loading...';
+  wordInput.disabled = true;
+  // Load text
+  loadWords();
   // Show number of seconds in UI
   seconds.innerHTML = currentLevel;
-  // Load word from array
-  showWord(words);
   // Start matching on word input
   wordInput.addEventListener('input', startMatch);
   // Call countdown every second
@@ -37,51 +40,33 @@ let time = currentLevel;
 let score = 0;
 let isPlaying;
 
-const words = [
-  	'grandfather',
-	'tremble',
-	'harm',
-	'snotty',
-	'skirt',
-	'morning',
-	'frog',
-	'cool',
-	'smiling',
-	'second',
-	'impulse',
-	'sister',
-	'bump',
-	'hypnotic',
-	'earn',
-	'furtive',
-	'angry',
-	'stamp',
-	'test',
-	'lick',
-	'motionless',
-	'inquisitive',
-	'applaud',
-	'pocket',
-	'clear',
-	'extra',
-	'unkempt',
-	'jellyfish',
-	'front',
-	'exclusive',
-	'car',
-	'post',
-	'twist',
-	'relation',
-	'hum',
-	'spray',
-	'day',
-	'whistle',
-	'trap',
-	'bow'
-];
+let words = null;
+
+// Downloads the word list
+function loadWords() {
+  fetch('data/twl06.txt')
+    .then(function(response) {
+      return response.text();
+    })
+    .then(function(text) {
+      let lines = text.split(/\r?\n/);
+      lines.pop(0);
+      lines.pop(0);
+      words = lines;
+      score = -1;
+      wordInput.disabled = false;
+      wordInput.placeholder = 'Start typing...';
+      timeDisplay.innerHTML = currentLevel;
+      showWord(words);
+    });
+}
 
 // Start match
 function startMatch() {
+  if (words === null) {
+    return;
+  }
+
   if (matchWords()) {
     isPlaying = true;
     time = currentLevel + 1;
@@ -127,6 +112,10 @@ function showWord(words) {
 
 // Countdown timer
 function countdown() {
+  if(!isPlaying) {
+    return;
+  }
+
   // Make sure time is not run out
   if (time > 0) {
     // Decrement
