@@ -110,11 +110,19 @@ function matchWords() {
 }
 
 // Pick & show random word
+let lastWord = "";
+// Generate random array index
+let randIndex = Math.floor(Math.random() * words.length);
 function showWord(words) {
-  // Generate random array index
-  const randIndex = Math.floor(Math.random() * words.length);
+  // Check if the random word is the same as the previous (it is, always, during the first check)
+  while (words[randIndex] === lastWord) {
+	// If yes, generate a new random index and check again
+    randIndex = Math.floor(Math.random() * words.length);
+  }
+  // Store the new word
+  lastWord = words[randIndex];
   // Output random word
-  currentWord.innerHTML = words[randIndex];
+  currentWord.innerHTML = lastWord;
 }
 
 // Countdown timer
