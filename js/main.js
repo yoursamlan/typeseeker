@@ -100,7 +100,7 @@ function startMatch() {
 
 // Match currentWord to wordInput
 function matchWords() {
-  if (wordInput.value === currentWord.innerHTML) {
+  if (wordInput.value.toLowerCase() === currentWord.innerHTML) {
     message.innerHTML = 'Correct!!!';
     return true;
   } else {
