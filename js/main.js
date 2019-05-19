@@ -93,22 +93,13 @@ function matchWords() {
     return false;
   }
 }
-// Pick & show random word
-let lastWord = "";
-// Generate random array index
-let randIndex = Math.floor(Math.random() * words.length);
 
 // Pick & show random word
 function showWord(words) {
-  // Check if the random word is the same as the previous (it is, always, during the first check)
-   while (words[randIndex] === lastWord) {
-     // If yes, generate a new random index and check again
-    randIndex = Math.floor(Math.random() * words.length);
-  }
-  // Store the new word
-  lastWord = words[randIndex];
+  // Generate random array index
+  const randIndex = Math.floor(Math.random() * words.length);
   // Output random word
-  currentWord.innerHTML = lastWord;
+  currentWord.innerHTML = words[randIndex];
 }
 
 // Countdown timer
