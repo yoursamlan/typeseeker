@@ -3,7 +3,7 @@ window.addEventListener('load', init);
 // Initialize Game
 function init() {
   // Setup loading text
-  wordInput.placeholder = 'Loading...';
+  wordInput.placeholder = 'Loading words...';
   wordInput.disabled = true;
   // Load text
   loadWords();
@@ -85,7 +85,7 @@ function startMatch() {
 
 // Match currentWord to wordInput
 function matchWords() {
-  if (wordInput.value.trim() === currentWord.innerHTML) {
+  if (wordInput.value.toLowerCase() === currentWord.innerHTML) {
     message.innerHTML = 'Correct!!!';
     return true;
   } else {
