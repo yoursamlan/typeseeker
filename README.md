@@ -1,5 +1,5 @@
 # typeseeker... 
-A speed-typing game that runs in a browser and has various difficulty levels that a user can choose between.
+A speed-typing game that runs in a browser and has various difficulty levels that can be toggled between.
 
 ## Getting Started
 Set up a local server and serve the files to start playing the game.<br> 
